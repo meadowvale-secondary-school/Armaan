@@ -30,6 +30,8 @@ isLeapYear(1900)
 isLeapYear(2012)
 // Should be false
 isLeapYear(2017)
+// Should be true
+isLeapYear(2020)
 //: - callout(Exercise): Complete the function above so that the rules are all followed and the examples get the correct answers.
 /*:
  

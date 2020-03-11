@@ -39,7 +39,8 @@
 
  - callout(Exercise): Practice writing out some comparison statements of your own. What happens if you try to compare non-integer types, like doubles or strings?
 */
-
+< looks like an like an L
+> does not look like an L
 
 
 
