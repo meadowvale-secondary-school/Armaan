@@ -1,27 +1,20 @@
-/*:
- ## Exercise: Leap Years
- 
- To decide if a year is a leap year, there are several decisions that have to be made:
- 
- - Is the year divisible by 4?
-    - If so, is the year divisible by 100?
-        - If not, it is a leap year.
-        - If so, is the year divisible by 400?
-            - If not, it is **not** a leap year.
-            - If so, it is a leap year.
- 
- These decisions can be made inside a function.
- 
- The `number(_:, isDivisibleBy:)` function has been built into this playground to make this exercise easier. Below is an incomplete function for deciding if a given year is a leap year:
-*/
-func isLeapYear(_ year: Int) -> Bool {
-    if number(year, isDivisibleBy: 4) {
-        // Fill in this code...
-        return true
+
+// below is derived from Terry after he solved mine and Laraibs problem with this
+// - Is the year divisible by 4?
+if year % 4 == 0 {
+  if year % 100 != 0 { // it seems like we had a logic error
+    return true
+  } else {
+    if year % 400 != 0 { // we got confused because of the doesn't (!=) we thought we would need to return true but, really it's false
+      return false
     } else {
-        return false
+      return true
     }
+  }
+} else {
+  return false
 }
+
 // Should be true
 isLeapYear(2000)
 // Should be false

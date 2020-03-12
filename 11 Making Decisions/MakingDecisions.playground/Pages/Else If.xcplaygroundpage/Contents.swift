@@ -5,11 +5,11 @@
  
  There is one last thing you can do with `if` and `else`. Here’s how it looks:
 */
-let videoLength = 120
+let videoLength = 130
 
 if videoLength < 5 {
     "If I blinked, I'd miss it."
-} else if videoLength > 500 {
+} else if videoLength > 131 {
     "Don't worry, I know a good editor."
 } else {
     "That was lovely."
@@ -27,6 +27,8 @@ if anotherVideoLength < 5 {
     "This is too long for anyone."
 } else if anotherVideoLength > 500 {
     "Don't worry, I know a good editor."
+} else if anotherVideoLength > 1000 {
+    "editor is on speed dial" // will never say this because above statement is true
 } else {
     "That was lovely."
 }
