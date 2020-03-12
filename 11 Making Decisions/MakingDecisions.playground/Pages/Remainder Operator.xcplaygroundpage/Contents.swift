@@ -10,7 +10,7 @@
 //: 4 divided by 2 is 2, with no remainder, so this line equals zero
 4 % 2
 //: 5 divided by 2 is 2, with a remainder of one, so this line equals one:
-5 % 2
+5 % 2 // like modulus in python
 //: To find out if the candy can be split evenly among your band members, you have to check if the remainder is zero:
 let bandMemberCount = 6
 let candyCount = 79
@@ -20,7 +20,7 @@ if candyCount % bandMemberCount == 0 {
     "Everyone quits! This is unacceptable!"
 }
 //: When reading the code, it’s not completely clear what’s happening. The `%` and `== 0` distract from the question that the code is asking. To make it clearer, you could put the code inside a function:
-func isCandyAmountAcceptable(bandMemberCount: Int, candyCount: Int) -> Bool {
+func isCandyAmountAcceptable(bandMemberCount: Int, candyCount: Int) -> Bool { // turns into boolean
     return candyCount % bandMemberCount == 0
 }
 //: As in the previous example, this approach hides the complexity of what’s happening in the function. You can then write the following code:
