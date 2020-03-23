@@ -169,6 +169,6 @@ extension ConversationViewController {
     }
     // This tells the table to make the row the correct height based on the contents
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
+        return UITableView.automaticDimension
     }
 }

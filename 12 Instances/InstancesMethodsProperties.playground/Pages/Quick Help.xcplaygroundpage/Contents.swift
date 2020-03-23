@@ -20,5 +20,3 @@ example.hasPrefix("It was")
  
 [Previous](@previous)  |  page 10 of 17  |  [Next: Read the Fine Manual](@next)
 */
-
-

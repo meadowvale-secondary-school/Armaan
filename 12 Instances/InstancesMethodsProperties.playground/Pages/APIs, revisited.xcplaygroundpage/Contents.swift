@@ -14,12 +14,11 @@
 */
 let example = "It was the best of times"
 // Practice here by typing . after "example":
-example
+example.`hasPrefix`
+example.`hasSuffix`
+example.`isEmpty`
 
-
-
-
-
+// so it just tells us type (true/or str)
 
 /*: 
  APIs also come with documentation to help you learn about them and see how they should be used.

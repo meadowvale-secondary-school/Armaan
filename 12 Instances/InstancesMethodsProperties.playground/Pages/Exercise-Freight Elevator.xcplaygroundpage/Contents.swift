@@ -6,15 +6,15 @@
  - callout(Exercise):
  Create three constants for items of different weights that you'd like to bring up to your fort: one less than 100, one between 100 and 1000, and one over 1000.
  */
-
-
-
+let dumbbell = 40
+let tableAndChairs = 105
+let mercedesBenz = 1845
 /*:
  - callout(Exercise):
  A lightweight treehouse pulley is already created below. But you've decided that you want to be able to lift, say, a small horse or piano up to your fort, so you’re installing a second pulley with a much bigger basket.\
  Create a second pulley that has a higher capacity and can hold at least ten times the weight of the `ricketyRope`.
  */
-
+var sturdyRope = TreehousePulley(weightCapacity: 2000)
 var ricketyRope = TreehousePulley(weightCapacity: 200)
 /*:
  - callout(Exercise):
@@ -23,3 +23,20 @@ var ricketyRope = TreehousePulley(weightCapacity: 200)
 
 [Previous](@previous)  |  page 16 of 17  |  [Next: Exercise: Identity](@next)
  */
+ricketyRope.addLoadToBasket(loadWeight: tableAndChairs)
+if ricketyRope.canHandleAdditionalLoad(tableAndChairs) {
+    ricketyRope.addLoadToBasket(loadWeight: tableAndChairs)
+}
+if ricketyRope.canHandleAdditionalLoad(tableAndChairs) {
+    ricketyRope.addLoadToBasket(tableAndChairs)
+}
+if ricketyRope.canHandleAdditionalLoad(dumbbell) {
+    ricketyRope.addLoadToBasket(loadWeight:dumbbell)
+} else {
+    sturdyRope.addLoadToBasket(dumbbell)
+}
+if sturdyRope.canHandleAdditionalLoad(mercedesBenz) {
+    sturdyRope.addLoadToBasket(loadWeight:mercedesBenz)
+} else {
+    print("too much for sturdy rope")
+}
