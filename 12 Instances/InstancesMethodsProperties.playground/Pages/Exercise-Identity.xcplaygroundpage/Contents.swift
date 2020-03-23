@@ -10,13 +10,14 @@ Below the declaration of `friendPlans`, update `myPlans` by using the addition o
 Check the values of `myPlans` and `friendPlans`. Are they the same or different?
  */
 // Create your variables here:
-
-
+var myPlans = "do homework, play video games"
+var friendPlans = myPlans
 
 // Update `myPlans` here:
+myPlans += "go to sleep"
 
-
-
+friendPlans
+myPlans
 
 /*:
  - callout(Exercise):
@@ -24,9 +25,11 @@ Check the values of `myPlans` and `friendPlans`. Are they the same or different?
 Call the `addDance` function on `myPlans`, and assign the result to `friendPlans`.
  */
 // Define and call your function here:
-
-
-
+func addDance(newPlans: string) -> string {
+    return newPlans + "no dancing"
+    
+}
+friendPlans = addDance(newPlans: newPlans)
 
 /*:
  - callout(Exercise):
@@ -34,9 +37,8 @@ Call the `addDance` function on `myPlans`, and assign the result to `friendPlans
  Print both instances to to find out.
  */
 // Check your guess by printing here:
-
-
-
+friendPlans
+myPlans
 
 /*:
  

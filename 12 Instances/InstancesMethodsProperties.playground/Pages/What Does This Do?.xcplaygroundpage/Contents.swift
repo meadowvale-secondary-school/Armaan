@@ -14,7 +14,7 @@ example.hasPrefix("It was")
 example.hasSuffix("times")
 example.isEmpty
 
-
+//option click acting a little weird on my computer, works on my mom's mac though --> hopefully the next method will work better
 /*:
  Next see another way to see help while looking at code.
  
