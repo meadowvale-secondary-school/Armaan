@@ -3,7 +3,17 @@
  - callout(Exercise): In this final exercise you’ll combine the things you’ve learned over the last few pages. Update this `responseToQuestion` function so that it gives the answers specified below. It’s OK to go back and look and code from earlier pages.
 */
 func responseTo(question: String) -> String {
-    return "?"
+        
+        let lowerQuestion = question.lowercased()
+        
+        if lowerQuestion.hasPrefix("hello") {
+            return "Why, hello there"
+        } else if lowerQuestion.hasPrefix("where") {
+            return "To the North"
+        } else {
+            return "where are the cookies?"
+        }
+    }
 }
 //: 👇These answers should be “Why, hello there!”
 responseTo(question: "Hello there")
