@@ -21,7 +21,7 @@ let someRating = starRatings[0]
 //: Since arrays always know what kind of element they're holding, you can pull out a single element from that collection and rely on type inference to establish that `someGrade` is a `String` and `someRating` is an `Int`.
 //:
 //: - callout(Exercise): Try setting `anotherGrade` to a number. What happens?
-var anotherGrade = grades[1]
+var anotherGrade = 12
 
 
 //: Next, learn how to work through the values in an array.\
