@@ -18,20 +18,57 @@ let shouldHaveMorePollOptionsVotes: [Bool] = [false, false, true, true, false, t
 
 //: - callout(Exercise): Create two variables, one to count `yes` votes and one to count `no` votes. Each should start off with a value of zero.
 //:
-
+var yesVote = 0
+var noVote = 0
+var yes1Vote = 0
+var no1Vote = 0
+var yes2vote = 0
+var no2vote = 0
 //: - callout(Exercise): Create a `for…in` loop that loops over one of the vote collections and checks the value of each vote. If the vote is `true`, the loop should add one vote to the `yes` variable. If it's `false`, it should add one vote to the `no` variable.
-
+for vote in shouldMascotChangeVotes {
+    if vote == true {
+        yesVote =+ 1
+    } else {
+        noVote += 1
+    }
+}
 
 
 //: - callout(Exercise): After the loop has finished, write an `if` statement that compares the two values and prints a different message based on whether the vote passed or failed.
-
+if yesVote > noVote {
+    print("Yes, mascots can vote")
+} else if yesVote == noVote {
+    print("tie recount")
+} else {
+    print("No, mascots cannot vote")
+}
 
 
 //: - callout(Exercise): Test your code by calling the `for…in` loop on each of the vote collections.\
 //:Which measures won by popular vote?
+for vote in shouldMascotChangeVotes {
+    if vote == true {
+        yesVote =+ 1
+    } else {
+        noVote += 1
+    }
+}
 
+for vote in shouldInstallCoffeeVendingMachineVotes {
+    if vote == true {
+        yes1Vote =+ 1
+    } else {
+        no1Vote += 1
+    }
+}
 
-
+for vote in shouldHaveMorePollOptionsVotes {
+    if vote == true {
+        yes2Vote =+ 1
+    } else {
+        no2Vote += 1
+    }
+}
 
 /*:
  ### Extension:
