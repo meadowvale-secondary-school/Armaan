@@ -6,28 +6,34 @@
  Think of another real-world object and its properties. Make up some actions or behaviors that the object might be able to perform. Write them all in plain English first in a comment:
  */
  // Add your English-language description of the type here. Make sure to add // before each line of your comment description.
- //
- //
- //
-
+ // Cars by Mercedes
+ // Year (INT)
+ // Model/Make (STRING)
 /*:
  - callout(Exercise):
  Using the `struct` syntax from this lesson, create a type for your real-world object with the properties and methods you thought of. Remembering to mark each property with `let` or `var` depending on whether or not it will be allowed to change. If you're not sure how to implement the body of one of the methods, describe what the method should do in a comment.\
  *Hint: If you made any properties with custom types, you can create placeholder types that have empty implementations. (See the TrainingShoe code at the bottom of this page for an example.) The placeholder type below will make sure your playground can run without errors.*
  */
 // Add your own struct here:
-
-
-
-
-
-
+struct MercedesBenz {
+    var model: String
+    let make: String
+    var year: Int
+    let timeTilService: Int
+    
+    var serviceDate: String {
+        let days = timeTilService / 86400
+        let hours = timeTilService % 3600
+        return "\(days):\(hours)"
+    }
+}
 /*:
  - callout(Exercise):
  Use the struct you created to make a new instance of your type.
 
  */
-
+let myBenz = MercedesBenz(model: GLC300, make: Benz, year: 2020, timeTilService: 234243243)
+myBenz.serviceDate
 
 /*:
  - note: Here's an example of a placeholder type used for making a TrainingShoe:

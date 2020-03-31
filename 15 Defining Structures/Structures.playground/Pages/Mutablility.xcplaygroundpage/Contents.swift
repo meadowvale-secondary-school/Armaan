@@ -19,10 +19,11 @@ struct Song {
     var rating: Int
 }
 //: This step alone isn’t enough to make the `rating` property on every `Song` instance mutable. The struct must also be assigned to a variable:
-var song = Song(title: "No, no, no", artist: "Fizz", duration: 150, rating: 0)
+let song = Song(title: "No, no, no", artist: "Fizz", duration: 150, rating: 0)
 song.rating
 song.rating = 4
 song.rating
+// mutability error
 //: - Experiment: Change the variable `song` to be a constant. What error does that produce?
 //:
 //: Note that the programmer who defines the type gets to choose which properties can possibly be changed. But any programmer that uses the type can decide whether a particular instance is mutable or immutable.
